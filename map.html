@@ -261,6 +261,16 @@
     margin-top: 10px;
   }
 
+  /* ── HOVER & MOTION ── */
+  .card { transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 22px rgba(199,117,164,0.4), 0 0 50px rgba(111,63,238,0.28), 0 0 90px rgba(63,36,136,0.16);
+  }
+  .champ-fill { transition: width 0.95s cubic-bezier(0.16, 1, 0.3, 1); }
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.55s ease, transform 0.55s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .two-col { grid-template-columns: 1fr; }
@@ -312,7 +322,7 @@
   <!-- Header -->
   <div class="header">
     <div class="header-title">Where We're Watching From</div>
-    <div class="header-subtitle">Group participation by city - March Madness 2026</div>
+    <div class="header-subtitle">Group participation by city - Sweet 16, March Madness 2026</div>
     <div class="header-meta">
       <div class="meta-pill"><span>287</span> Members</div>
       <div class="meta-pill"><span>172</span> City-Tagged Entries</div>
@@ -452,7 +462,7 @@
         </g>
       </svg>
     </div>
-    <div class="footer-caption">March Madness Bracket Challenge 2026 · 277 brackets · Data as of 3/19/2026</div>
+    <div class="footer-caption">March Madness Bracket Challenge 2026 · Sweet 16 · Data as of 3/27/2026</div>
   </div>
 
 </div>
@@ -628,6 +638,43 @@ async function drawMap() {
 }
 
 drawMap();
+</script>
+
+<script>
+(function () {
+  // Store target widths and reset for bar sweep
+  document.querySelectorAll('.champ-fill').forEach(function (el) {
+    el.dataset.target = el.style.width || '0%';
+    el.style.width = '0%';
+  });
+
+  // Scroll reveal for cards
+  var cards = document.querySelectorAll('.card');
+  cards.forEach(function (el) { el.classList.add('reveal'); });
+
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry, i) {
+      if (entry.isIntersecting) {
+        setTimeout(function () { entry.target.classList.add('visible'); }, i * 60);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  cards.forEach(function (el) { revealObserver.observe(el); });
+
+  // Bar fill sweep on card enter
+  var barObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.champ-fill').forEach(function (el, i) {
+          setTimeout(function () { el.style.width = el.dataset.target; }, i * 70 + 150);
+        });
+        barObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  cards.forEach(function (el) { barObserver.observe(el); });
+})();
 </script>
 </body>
 </html>
