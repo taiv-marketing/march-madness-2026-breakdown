@@ -235,6 +235,15 @@
   .lb-rank.r3 { color: #cd7f32; }
   .lb-rank.other { color: rgba(245,247,250,0.4); }
 
+  .lb-pick {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+  }
+  .lb-pick-alive { color: var(--color-coral); }
+  .lb-pick-elim { color: rgba(245,247,250,0.25); text-decoration: line-through; }
+
   .lb-name {
     flex: 1;
     font-size: 12px;
@@ -519,13 +528,13 @@
 
   <!-- HEADER -->
   <div class="header">
-    <div class="sweet16-badge">🏀 Sweet 16 Update</div>
-    <div class="header-title">Bracket Challenge<br>Sweet 16 Update</div>
-    <div class="header-subtitle">We're down to 16 teams. Here's how Taiv partners are stacking up heading into the home stretch.</div>
+    <div class="sweet16-badge">🏀 Final Four</div>
+    <div class="header-title">Bracket Challenge<br>Final Four Update</div>
+    <div class="header-subtitle">4 teams left. 3 games to go. Here's where every Taiv partner bracket stands heading into Indianapolis.</div>
     <div class="header-meta">
       <div class="meta-pill"><span>277</span> Brackets</div>
-      <div class="meta-pill"><span>25</span> Champion Picks</div>
-      <div class="meta-pill">Updated <span>5PM CST 3/27/26</span></div>
+      <div class="meta-pill"><span>4</span> Teams Remaining</div>
+      <div class="meta-pill">Updated <span>9:32AM 3/30/26</span></div>
     </div>
   </div>
 
@@ -545,20 +554,20 @@
   <div class="section-label">At a Glance</div>
   <div class="stat-cards">
     <div class="stat-card">
-      <div class="stat-number">690</div>
-      <div class="stat-label">points - current group leader score</div>
+      <div class="stat-number">1050</div>
+      <div class="stat-label">points - current group leader score (Will Skinnell)</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number">11.6%</div>
+      <div class="stat-number">22.8%</div>
       <div class="stat-label">top projected win probability (ESPN Analytics)</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number">#1</div>
-      <div class="stat-label">CHI - Will - Spark leads the group right now</div>
+      <div class="stat-number">52%</div>
+      <div class="stat-label">of brackets had their champion eliminated already</div>
     </div>
     <div class="stat-card">
-      <div class="stat-number">130+</div>
-      <div class="stat-label">points separate 1st and 25th place. Still wide open.</div>
+      <div class="stat-number">70</div>
+      <div class="stat-label">point gap between 1st and 2nd place right now</div>
     </div>
   </div>
 
@@ -574,119 +583,131 @@
         <div>
           <div class="lb-name">Will Skinnell</div>
           <div class="lb-company">CHI · Spark</div>
+          <div class="lb-pick lb-pick-elim">Duke ✕ eliminated</div>
         </div>
-        <div class="lb-pts">690</div>
-        <div class="lb-max">max 1810</div>
+        <div class="lb-pts">1050</div>
+        <div class="lb-max">max 1210</div>
       </div>
 
       <div class="lb-row">
-        <div class="lb-rank r2">2</div>
+        <div class="lb-rank r2">T2</div>
         <div>
-          <div class="lb-name">Thomas Atkins</div>
-          <div class="lb-company">LV · MGM Resorts</div>
+          <div class="lb-name">Matthew Powers</div>
+          <div class="lb-company">NY · Starcom</div>
+          <div class="lb-pick lb-pick-alive">Michigan ✓</div>
         </div>
-        <div class="lb-pts">630</div>
-        <div class="lb-max">max 1240</div>
+        <div class="lb-pts">980</div>
+        <div class="lb-max">max 1620</div>
       </div>
 
       <div class="lb-row">
-        <div class="lb-rank r3">T3</div>
-        <div>
-          <div class="lb-name">Stacy Sanchez</div>
-          <div class="lb-company">LA · Horizon</div>
-        </div>
-        <div class="lb-pts">620</div>
-        <div class="lb-max">max 1740</div>
-      </div>
-
-      <div class="lb-row">
-        <div class="lb-rank r3">T3</div>
-        <div>
-          <div class="lb-name">Kyle Picinic</div>
-          <div class="lb-company">NYC · HMI</div>
-        </div>
-        <div class="lb-pts">620</div>
-        <div class="lb-max">max 1240</div>
-      </div>
-
-      <div class="lb-row">
-        <div class="lb-rank r3">T3</div>
+        <div class="lb-rank r2">T2</div>
         <div>
           <div class="lb-name">Angela DiPietro</div>
           <div class="lb-company">NYC</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
         </div>
-        <div class="lb-pts">620</div>
-        <div class="lb-max">max 1500</div>
+        <div class="lb-pts">980</div>
+        <div class="lb-max">max 1460</div>
       </div>
 
       <div class="lb-row">
-        <div class="lb-rank r3">T3</div>
+        <div class="lb-rank r2">T2</div>
         <div>
-          <div class="lb-name">David Koppelman</div>
-          <div class="lb-company">NY · Billups</div>
+          <div class="lb-name">Kyle Picinic</div>
+          <div class="lb-company">NYC · HMI</div>
+          <div class="lb-pick lb-pick-elim">Duke ✕ eliminated</div>
         </div>
-        <div class="lb-pts">620</div>
-        <div class="lb-max">max 1180</div>
+        <div class="lb-pts">980</div>
+        <div class="lb-max">max 1140</div>
       </div>
 
       <div class="lb-row">
-        <div class="lb-rank other">T7</div>
+        <div class="lb-rank r3">5</div>
         <div>
-          <div class="lb-name">Becky Koontz</div>
-          <div class="lb-company"></div>
+          <div class="lb-name">Josh Wigley</div>
+          <div class="lb-company">DAL · GWG</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
         </div>
-        <div class="lb-pts">610</div>
-        <div class="lb-max">max 1650</div>
-      </div>
-
-      <div class="lb-row">
-        <div class="lb-rank other">T7</div>
-        <div>
-          <div class="lb-name">Brittany Braeutigan</div>
-          <div class="lb-company"></div>
-        </div>
-        <div class="lb-pts">610</div>
+        <div class="lb-pts">970</div>
         <div class="lb-max">max 1610</div>
       </div>
 
       <div class="lb-row">
-        <div class="lb-rank other">T7</div>
+        <div class="lb-rank other">T6</div>
         <div>
-          <div class="lb-name">Noah Brook</div>
+          <div class="lb-name">Davis White</div>
+          <div class="lb-company">Denver · bet365</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
+        </div>
+        <div class="lb-pts">940</div>
+        <div class="lb-max">max 1420</div>
+      </div>
+
+      <div class="lb-row">
+        <div class="lb-rank other">T6</div>
+        <div>
+          <div class="lb-name">Stacy Sanchez</div>
+          <div class="lb-company">LA · Horizon</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
+        </div>
+        <div class="lb-pts">940</div>
+        <div class="lb-max">max 1420</div>
+      </div>
+
+      <div class="lb-row">
+        <div class="lb-rank other">T8</div>
+        <div>
+          <div class="lb-name">Robyn Pinkerton</div>
           <div class="lb-company"></div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
         </div>
-        <div class="lb-pts">610</div>
-        <div class="lb-max">max 1490</div>
+        <div class="lb-pts">920</div>
+        <div class="lb-max">max 1400</div>
+      </div>
+
+      <div class="lb-row">
+        <div class="lb-rank other">T8</div>
+        <div>
+          <div class="lb-name">Megan Seibert</div>
+          <div class="lb-company">NY · Talon</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
+        </div>
+        <div class="lb-pts">920</div>
+        <div class="lb-max">max 1400</div>
       </div>
 
       <div class="lb-row">
         <div class="lb-rank other">T10</div>
         <div>
-          <div class="lb-name">Justin Lucero</div>
-          <div class="lb-company">NY · Publicis</div>
+          <div class="lb-name">Thomas Atkins</div>
+          <div class="lb-company">LV · MGM Resorts</div>
+          <div class="lb-pick lb-pick-alive">Arizona ✓</div>
         </div>
-        <div class="lb-pts">600</div>
-        <div class="lb-max">max 1720</div>
+        <div class="lb-pts">910</div>
+        <div class="lb-max">max 1390</div>
       </div>
 
       <div class="lb-row">
         <div class="lb-rank other">T10</div>
         <div>
-          <div class="lb-name">Lisa Mieskoski</div>
-          <div class="lb-company"></div>
+          <div class="lb-name">Riley Myles</div>
+          <div class="lb-company">NY · PHD</div>
+          <div class="lb-pick lb-pick-alive">Michigan ✓</div>
         </div>
-        <div class="lb-pts">600</div>
-        <div class="lb-max">max 1160</div>
+        <div class="lb-pts">910</div>
+        <div class="lb-max">max 1390</div>
       </div>
 
       <div class="lb-row">
         <div class="lb-rank other">T10</div>
         <div>
-          <div class="lb-name">Sera Vanisko</div>
-          <div class="lb-company">B1G Favoritism</div>
+          <div class="lb-name">Kevin Gross</div>
+          <div class="lb-company">LA</div>
+          <div class="lb-pick lb-pick-alive">Michigan ✓</div>
         </div>
-        <div class="lb-pts">600</div>
-        <div class="lb-max">max 1160</div>
+        <div class="lb-pts">910</div>
+        <div class="lb-max">max 1390</div>
       </div>
 
       <div style="margin-top:16px; font-size:10px; font-weight:300; color:rgba(245,247,250,0.3); line-height:1.5;">
@@ -700,63 +721,45 @@
       <div style="font-size:11px; font-weight:300; color:rgba(245,247,250,0.45); margin-bottom:18px; line-height:1.5;">ESPN's algorithm estimates each bracket's chances of winning based on remaining picks. Take these with a grain of salt - but they're fun to watch.</div>
 
       <div class="fc-row">
-        <div class="fc-name">🥇 Will Skinnell <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· CHI Spark · #1</span></div>
+        <div class="fc-name">Kelsey Maciejewski <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· #105</span></div>
         <div class="fc-track"><div class="fc-fill" style="width:100%"></div></div>
-        <div class="fc-pct">11.6%</div>
+        <div class="fc-pct">22.8%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Kels123456's Picks 1 <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· #107</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:95.7%"></div></div>
-        <div class="fc-pct">11.1%</div>
+        <div class="fc-name">Justin Lucero <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NY Publicis · #34</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:79.8%"></div></div>
+        <div class="fc-pct">18.2%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Derek Moe <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· #20</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:59.5%"></div></div>
-        <div class="fc-pct">6.9%</div>
+        <div class="fc-name">Meghan Burns <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NYC Mediacom · #27</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:74.1%"></div></div>
+        <div class="fc-pct">16.9%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Stacy Sanchez <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· LA Horizon · #3</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:46.6%"></div></div>
-        <div class="fc-pct">5.4%</div>
+        <div class="fc-name">Matthew Powers <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NY Starcom · #2</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:64.9%"></div></div>
+        <div class="fc-pct">14.8%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Justin Lucero <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NY Publicis · #10</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:45.7%"></div></div>
-        <div class="fc-pct">5.3%</div>
+        <div class="fc-name">Josh Wigley <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· DAL GWG · #5</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:60.5%"></div></div>
+        <div class="fc-pct">13.8%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Kyle Picinic <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NYC HMI · #3</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:42.2%"></div></div>
-        <div class="fc-pct">4.9%</div>
+        <div class="fc-name">Lindsay <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· LA TLMD/Spark · #105</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:29.8%"></div></div>
+        <div class="fc-pct">6.8%</div>
       </div>
 
       <div class="fc-row">
-        <div class="fc-name">Hannah Yeager <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NY Starcom · #107</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:33.6%"></div></div>
-        <div class="fc-pct">3.9%</div>
-      </div>
-
-      <div class="fc-row">
-        <div class="fc-name">Meghan Burns <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NYC Mediacom · #107</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:25%"></div></div>
-        <div class="fc-pct">2.9%</div>
-      </div>
-
-      <div class="fc-row">
-        <div class="fc-name">James Pensabene <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· NY PC · #20</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:24.1%"></div></div>
-        <div class="fc-pct">2.8%</div>
-      </div>
-
-      <div class="fc-row">
-        <div class="fc-name">CHI - Emma <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· #49</span></div>
-        <div class="fc-track"><div class="fc-fill" style="width:24.1%"></div></div>
-        <div class="fc-pct">2.8%</div>
+        <div class="fc-name">Chloe Ewer <span style="color:rgba(245,247,250,0.35);font-weight:400;font-size:10px;">· CHI Billups · #13</span></div>
+        <div class="fc-track"><div class="fc-fill" style="width:29.4%"></div></div>
+        <div class="fc-pct">6.7%</div>
       </div>
 
       <div style="margin-top:16px; padding-top:14px; border-top:1px solid rgba(199,117,164,0.15); font-size:10px; font-weight:300; color:rgba(245,247,250,0.3); line-height:1.5;">
@@ -769,73 +772,67 @@
   <div class="section-label">Champion Picks</div>
   <div class="card" style="margin-bottom:24px;">
     <div class="card-title">Who Did the Group Pick to Win It All?</div>
-    <div style="font-size:12px;font-weight:300;color:rgba(245,247,250,0.5);margin-bottom:20px;">Original picks from tournament start. If your team is still dancing, your bracket's still breathing.</div>
+    <div style="font-size:12px;font-weight:300;color:rgba(245,247,250,0.5);margin-bottom:20px;">Picks were locked at tournament start. Bright bars = still alive in the Final Four. Faded = eliminated.</div>
 
     <div class="bar-row">
-      <div class="bar-label">Duke Blue Devils</div>
-      <div class="bar-track"><div class="bar-fill top1" style="width:100%"></div></div>
-      <span class="bar-pct">25.6%</span>
-      <div class="bar-count">71</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Duke Blue Devils ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:100%"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">25.6%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">71</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Arizona Wildcats</div>
+      <div class="bar-label">Arizona Wildcats ✓</div>
       <div class="bar-track"><div class="bar-fill top2" style="width:95.8%"></div></div>
       <span class="bar-pct">24.6%</span>
       <div class="bar-count">68</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Michigan Wolverines</div>
+      <div class="bar-label">Michigan Wolverines ✓</div>
       <div class="bar-track"><div class="bar-fill top3" style="width:63.4%"></div></div>
       <span class="bar-pct">16.2%</span>
       <div class="bar-count">45</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Florida Gators</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:28.2%"></div></div>
-      <span class="bar-pct">7.2%</span>
-      <div class="bar-count">20</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Florida Gators ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:28.2%"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">7.2%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">20</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">UConn Huskies</div>
+      <div class="bar-label">UConn Huskies ✓</div>
       <div class="bar-track"><div class="bar-fill rest" style="width:25.4%"></div></div>
       <span class="bar-pct">6.5%</span>
       <div class="bar-count">18</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Houston Cougars</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:19.7%"></div></div>
-      <span class="bar-pct">5.1%</span>
-      <div class="bar-count">14</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Houston Cougars ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:19.7%"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">5.1%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">14</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Gonzaga Bulldogs</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:11.3%"></div></div>
-      <span class="bar-pct">2.9%</span>
-      <div class="bar-count">8</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Gonzaga Bulldogs ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:11.3%"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">2.9%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">8</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Purdue Boilermakers</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:8.5%"></div></div>
-      <span class="bar-pct">2.2%</span>
-      <div class="bar-count">6</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Purdue Boilermakers ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:8.5%"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">2.2%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">6</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Michigan St</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:5.6%"></div></div>
-      <span class="bar-pct">1.4%</span>
-      <div class="bar-count">4</div>
+      <div class="bar-label" style="color:rgba(245,247,250,0.35);">Others (eliminated) ✕</div>
+      <div class="bar-track"><div class="bar-fill elim" style="width:11%;opacity:0.5"></div></div>
+      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">3.6%</span>
+      <div class="bar-count" style="color:rgba(245,247,250,0.3)">10</div>
     </div>
     <div class="bar-row">
-      <div class="bar-label">Iowa State</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:4.2%"></div></div>
-      <span class="bar-pct">1.1%</span>
-      <div class="bar-count">3</div>
-    </div>
-    <div class="bar-row">
-      <div class="bar-label" style="color:rgba(245,247,250,0.4)">15 other teams</div>
-      <div class="bar-track"><div class="bar-fill rest" style="width:28.2%;opacity:0.35"></div></div>
-      <span class="bar-pct" style="color:rgba(245,247,250,0.3)">7.2%</span>
-      <div class="bar-count" style="color:rgba(245,247,250,0.3)">20</div>
+      <div class="bar-label">Illinois Fighting Illini ✓</div>
+      <div class="bar-track"><div class="bar-fill rest" style="width:1.4%"></div></div>
+      <span class="bar-pct">0.4%</span>
+      <div class="bar-count">1</div>
     </div>
   </div>
 
@@ -844,39 +841,39 @@
   <div class="callout-grid">
 
     <div class="callout">
+      <span class="callout-icon">💀</span>
+      <div class="callout-headline">Duke Is Out. 71 Brackets Are Busted.</div>
+      <div class="callout-body">The most popular champion pick in the group - <strong>25.6% had Duke</strong> - is gone. Those 71 brackets can still rack up points, but they can't win the overall prize.</div>
+    </div>
+
+    <div class="callout">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-headline">The Leader Can't Win the Suite</div>
+      <div class="callout-body">Will Skinnell leads at <strong>1050 points</strong> - but he picked Duke, which is gone. His MAX is capped at 1210. Matthew Powers (rank 2, Michigan pick) has a MAX of 1620 and can still take everything.</div>
+    </div>
+
+    <div class="callout">
       <span class="callout-icon">🔥</span>
-      <div class="callout-headline">Rank 107 Has the Best Path Left</div>
-      <div class="callout-body">One bracket sitting at <strong>rank 107</strong> has a stronger path to the title than almost anyone in the top 10. It has the right champion still alive. The points will come.</div>
+      <div class="callout-headline">Rank 105 Is ESPN's Pick to Win</div>
+      <div class="callout-body">Kelsey Maciejewski is sitting at <strong>rank 105</strong> but leads the entire group in projected win probability at <strong>22.8%</strong>. They picked the right champion. The points are coming.</div>
     </div>
 
     <div class="callout">
       <span class="callout-icon">🏙️</span>
-      <div class="callout-headline">Chicago Running the Table</div>
-      <div class="callout-body">CHI - Will - Spark holds the top spot at <strong>690 points</strong> - a 60-point gap over 2nd place. Chicago entries are showing up strong across both standings and forecast.</div>
+      <div class="callout-headline">NY Is Taking Over the Top 10</div>
+      <div class="callout-body">Matthew Powers (Starcom), Megan Seibert (Talon), Riley Myles (PHD), and Justin Lucero (Publicis) are all clustered in the top 10. <strong>NY brackets are punching hard.</strong></div>
     </div>
 
     <div class="callout">
-      <span class="callout-icon">⚔️</span>
-      <div class="callout-headline">Duke vs. Arizona Still a War</div>
-      <div class="callout-body">The group is nearly split at the top - <strong>25.6% picked Duke</strong> and <strong>24.6% picked Arizona</strong>. One early exit sends a quarter of the group into freefall.</div>
+      <span class="callout-icon">🏀</span>
+      <div class="callout-headline">Arizona and Michigan Are the Live Picks</div>
+      <div class="callout-body"><strong>68 brackets had Arizona, 45 had Michigan.</strong> Those are the two realistic champion paths still alive. UConn (18 brackets) is a long shot after their Elite 8 miracle.</div>
     </div>
 
     <div class="callout">
-      <span class="callout-icon">🏙️</span>
-      <div class="callout-headline">NY and LA Are Still In This</div>
-      <div class="callout-body">Multiple NY and LA partners hold top-10 current scores and strong ESPN win projections. <strong>Justin Lucero (NY · Publicis) has a 5.3% chance</strong> of winning the whole group from rank 10.</div>
-    </div>
-
-    <div class="callout">
-      <span class="callout-icon">📊</span>
-      <div class="callout-headline">Current Rank Means Nothing</div>
-      <div class="callout-body">Three of the top-10 forecast picks are currently ranked <strong>#107</strong>. The Sweet 16 reshuffles everything. The group leader can change with one bad game this weekend.</div>
-    </div>
-
-    <div class="callout">
-      <span class="callout-icon">🎟️</span>
-      <div class="callout-headline">The Suite is Still Up for Grabs</div>
-      <div class="callout-body">The VIP sports suite experience goes to the overall winner. With the Sweet 16 still ahead, <strong>no one can call this one yet</strong>. Check your brackets and keep watching.</div>
+      <span class="callout-icon">📈</span>
+      <div class="callout-headline">The Leaderboard Reshuffled Hard</div>
+      <div class="callout-body">Thomas Atkins was <strong>#2 last week</strong>, now sitting at T10. Matthew Powers and Josh Wigley weren't in the top 12 - they're now T2 and #5. Dallas and Denver showed up out of nowhere.</div>
     </div>
 
   </div>
@@ -912,7 +909,7 @@
         </g>
       </svg>
     </div>
-    <div class="footer-caption">Taiv March Madness Bracket Challenge 2026 · 277 brackets · Standings as of 3/27/26 4:42 PM ET</div>
+    <div class="footer-caption">Taiv March Madness Bracket Challenge 2026 · 277 brackets · Standings as of 3/30/26 9:32 AM ET</div>
   </div>
 
 </div>
