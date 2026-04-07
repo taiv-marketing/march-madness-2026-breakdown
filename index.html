@@ -61,7 +61,7 @@
     .logo-wrap {
       display: flex;
       justify-content: center;
-      margin-bottom: 36px;
+      margin-bottom: 64px;
     }
 
     .taiv-logo {
@@ -107,16 +107,26 @@
     }
 
     .hero-label {
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 600;
       letter-spacing: 3px;
       text-transform: uppercase;
       color: var(--color-coral);
-      margin-bottom: 20px;
+      margin-bottom: 16px;
       animation: fadeInDown 0.8s ease-out;
     }
 
     .hero-title {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(245, 247, 250, 0.6);
+      margin-bottom: 12px;
+      animation: fadeInDown 0.8s ease-out 0.1s both;
+    }
+
+    .hero-winner {
       font-size: 64px;
       font-weight: 800;
       line-height: 1.1;
@@ -124,24 +134,29 @@
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
-      margin-bottom: 12px;
-      animation: fadeInDown 0.8s ease-out 0.1s both;
-    }
-
-    .hero-winner {
-      font-size: 24px;
-      font-weight: 600;
-      color: var(--color-tech-white);
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       animation: fadeInUp 0.8s ease-out 0.2s both;
     }
 
     .hero-meta {
-      font-size: 14px;
+      font-size: 16px;
       font-weight: 400;
-      color: rgba(245, 247, 250, 0.7);
-      margin-bottom: 24px;
+      color: rgba(245, 247, 250, 0.5);
+      letter-spacing: 0.5px;
+      margin-bottom: 28px;
       animation: fadeInUp 0.8s ease-out 0.3s both;
+    }
+
+    .hero-prize {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-orchid);
+      margin-top: 28px;
+      padding: 10px 20px;
+      border: 1px solid rgba(199, 117, 164, 0.25);
+      border-radius: 40px;
+      display: inline-block;
+      animation: fadeInUp 0.8s ease-out 0.5s both;
     }
 
     .hero-stats {
@@ -618,11 +633,11 @@
       }
 
       .hero-title {
-        font-size: 48px;
+        font-size: 16px;
       }
 
       .hero-winner {
-        font-size: 20px;
+        font-size: 48px;
       }
 
       .regions-grid {
@@ -658,11 +673,11 @@
       }
 
       .hero-title {
-        font-size: 36px;
+        font-size: 14px;
       }
 
       .hero-winner {
-        font-size: 18px;
+        font-size: 36px;
       }
 
       .hero-stats {
@@ -759,9 +774,7 @@
       <div class="hero">
         <div class="hero-glow"></div>
         <div class="hero-content">
-          <div style="font-size:64px; margin-bottom:12px;">🏆</div>
-          <div class="hero-label">Championship Victory</div>
-          <h1 class="hero-title">Your Winner</h1>
+          <div class="hero-label">🏆 Your Champion</div>
           <div class="hero-winner">Matthew Powers</div>
           <div class="hero-meta">New York · Starcom</div>
           <div class="hero-stats">
@@ -775,9 +788,10 @@
             </div>
             <div class="hero-stat">
               <div class="hero-stat-num">Michigan</div>
-              <div class="hero-stat-label">Wolverines Champions</div>
+              <div class="hero-stat-label">Champion Pick</div>
             </div>
           </div>
+          <div class="hero-prize">🎟 Grand Prize: New York Suite Experience Hosted by Taiv</div>
         </div>
       </div>
 
@@ -977,7 +991,7 @@
         <div class="next-steps-icon">✉️</div>
         <div class="next-steps-title">What's Next</div>
         <div class="next-steps-text">
-          Thanks to everyone who participated - 277 brackets made this our biggest challenge yet. Regional and overall winners will be contacted over the next week. Watch your inbox for prize details and the championship suite information. Stay tuned for more events and challenges from Taiv in the future.
+          Thanks to everyone who participated - 277 brackets made this our biggest challenge yet. Regional and overall winners will be contacted soon. Watch your inbox for prize details and the championship suite information. Stay tuned for more events and challenges from Taiv in the future.
         </div>
       </div>
 
