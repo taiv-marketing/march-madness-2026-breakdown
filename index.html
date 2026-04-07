@@ -290,6 +290,30 @@
       font-weight: 600;
     }
 
+    .card-layout {
+      display: flex;
+      gap: 28px;
+      align-items: stretch;
+    }
+
+    .card-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-image {
+      flex: 0 0 240px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
     /* ── REGIONAL WINNERS GRID ── */
     .regions-grid {
       display: grid;
@@ -654,6 +678,17 @@
       }
     }
 
+    @media (max-width: 900px) {
+      .card-layout {
+        flex-direction: column;
+      }
+
+      .card-image {
+        flex: none;
+        height: 200px;
+      }
+    }
+
     @media (max-width: 640px) {
       body {
         padding: 24px 16px;
@@ -798,13 +833,20 @@
       <!-- Game Summary -->
       <div class="section-label">The Final Game</div>
       <div class="card">
-        <div class="card-title">Michigan Captures First Title in 37 Years</div>
-        <div class="game-score">Michigan 69, UConn 63</div>
-        <div class="game-detail">
-          <span class="game-detail-accent">An ugly shooting night.</span> Neither team cracked 40 percent from the field. But Michigan showed up where it mattered. The Wolverines sank 25-of-28 free throws in a defensive grind.
-        </div>
-        <div class="game-detail">
-          <span class="game-detail-accent">Yaxel Lendeborg played hurt</span> after spraining his MCL in the semifinal. He gutted it out on the biggest stage. Trey McKenney's step-back three with 1:50 left sealed the championship.
+        <div class="card-layout">
+          <div class="card-text">
+            <div class="card-title">Michigan Captures First Title in 37 Years</div>
+            <div class="game-score">Michigan 69, UConn 63</div>
+            <div class="game-detail">
+              <span class="game-detail-accent">An ugly shooting night.</span> Neither team cracked 40 percent from the field. But Michigan showed up where it mattered. The Wolverines sank 25-of-28 free throws in a defensive grind.
+            </div>
+            <div class="game-detail">
+              <span class="game-detail-accent">Yaxel Lendeborg played hurt</span> after spraining his MCL in the semifinal. He gutted it out on the biggest stage. Trey McKenney's step-back three with 1:50 left sealed the championship.
+            </div>
+          </div>
+          <div class="card-image">
+            <img src="https://cdn-media.theathletic.com/cdn-cgi/image/width=770%2cquality=70%2cformat=auto/https://cdn-media.theathletic.com/x1waWZRKs4qd_qTeFQr8lXh3S_1440x960.jpg" alt="Michigan celebrates national championship">
+          </div>
         </div>
       </div>
 
